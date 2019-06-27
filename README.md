@@ -1,3 +1,11 @@
+This .tex file originated at:
+
+https://www.overleaf.com/latex/templates/software-engineering-resume/mcvwcrmddsyw
+
+Modifications were made to the original file to get it to compile with my Linux VM. (Ubuntu 16.04.3 LTS).
+
+--- Original README follows ---
+
 This was adapted from the template [here](https://github.com/sb2nov/resume), with some modifications to design, the code, and ability to get up and running. [Preview](#preview) here.
 
 # Usage
