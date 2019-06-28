@@ -2,7 +2,7 @@ This .tex file originated at:
 
 https://www.overleaf.com/latex/templates/software-engineering-resume/mcvwcrmddsyw
 
-Modifications were made to the original file to get it to compile with my Linux VM. (Ubuntu 16.04.3 LTS).
+Modifications were made to the original file to get it to compile with my Linux VM. (Ubuntu 19.04).
 
 --- Original README follows ---
 
