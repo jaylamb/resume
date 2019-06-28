@@ -17,14 +17,14 @@
 \def \fullname {Jay D. Lamb}
 \def \subtitle {Computer Engineer}
 
+% Phone
+\def \phoneicon {\faPhone}
+\def \phonetext {+1-406-598-4072}
+
 % LinkedIn
 \def \linkedinicon {\faLinkedin}
 \def \linkedinlink {http://www.linkedin.com/in/jay-lamb-032166174/}
 \def \linkedintext {/jay-lamb}
-
-% Phone
-\def \phoneicon {\faPhone}
-\def \phonetext {+1-406-598-4072}
 
 % E-mail
 \def \emailicon {\faEnvelope}
@@ -37,15 +37,15 @@
 \def \githubtext {/jaylamb}
 
 % Webpage
-\def \websiteicon {\faGlobe}
-\def \websitelink {https://google.com/}
-\def \websitetext {jayswebsite.com}
+%\def \websiteicon {\faGlobe}
+%\def \websitelink {https://google.com/}
+%\def \websitetext {jayswebsite.com}
 
 \def \headertype {\doublecol} % \singlecol or \doublecol
 
 % Misc. settings
 \def \entryspacing {-0pt}
-\def \bulletstyle {\faAngleRight}
+\def \bulletstyle {\faChevronCircleRight[solid]}
 
 % Colors
 \definecolor{primary}{HTML}{000000}   % White
@@ -67,7 +67,7 @@
 \def \phone {\phoneicon \hspace{3pt}{ \phonetext}}
 \def \email {\emailicon \hspace{3pt}\href{\emaillink}{\emailtext}}
 \def \github {\githubicon \hspace{3pt}\href{\githublink}{\githubtext}}
-\def \website {\websiteicon \hspace{3pt}\href{\websitelink}{\websitetext}}
+%\def \website {\websiteicon \hspace{3pt}\href{\websitelink}{\websitetext}}
 
 % Define the link colours
 \hypersetup{
@@ -84,7 +84,7 @@
 
 % Custom commands
 
-% Sections
+% Section labels
 \renewcommand{\section}[2]{\vspace{5pt}
   \colorbox{secondary}{\color{white}\raggedbottom\normalsize\textbf{{#1}{\hspace{7pt}#2}}}
 }
@@ -139,9 +139,9 @@
       \end{tabular}
     } & {
       \begin{tabular}[c]{l@{\hspace{1.5em}}l}
-        {\small#4} & {\small#1} \\
-        {\small#5} & {\small#2} \\
-        {\small#6} & {\small#3}
+        {\small#1} & {\small#2} \\
+        {\small#3} & {\small#4} \\
+        {\small#5} & {\small#6}
       \end{tabular}
     }
   \end{tabular*}
@@ -173,7 +173,8 @@
 % HEADER
 
 % Order the header entries
-\headertype{\linkedin}{\github}{\website}{\phone}{\email}{}
+\headertype{\phone}{\linkedin}{\email}{\github}{}{}
+%\headertype{\linkedin}{\github}{\website}{\phone}{\email}{}
 
 % EDUCATION
 \section{\faGraduationCap}{Education}
@@ -185,7 +186,7 @@
   \resumeEntryEnd
 
 % EXPERIENCE
-\section{\faLaptopCode}{Experience}
+\section{\faRoad}{Experience}
 
   \resumeEntryStart
     \resumeEntryTSDL
@@ -220,50 +221,31 @@
     \resumeItemListEnd
   \resumeEntryEnd
 
-  %\resumeEntryStart
-   % \resumeEntryTSDL
-    %  {Dunder Mifflin}{Mar. 2005 -- Mar. 2008}
-     % {Assistant (to the) Regional Manager}{Scranton, PA}
-   % \resumeItemListStart
-    %  \resumeItem {THING 1}
-     % \resumeItem {THING 2}
-     % \resumeItem {THING 3}
-   % \resumeItemListEnd
- % \resumeEntryEnd
-
-
-%-------------------------------------------------- PROJECTS --------------------------------------------------
-\section{\faFlask}{Projects}
+% PROJECTS
+\section{\faLaptopCode}{Projects}
 
   \resumeEntryStart
     \resumeEntryTD
-      {Schrute Farms (Bed and Breakfast)}{}
+      {Automated Tracking Analyzer Balancer System (ATABS)}{}
     \resumeItemListStart
-      \resumeItem {A beautiful resort that provides fun activites like tablemaking and mattress making.}
+      \resumeItem {THING 1}
     \resumeItemListEnd
   \resumeEntryEnd
 
   \resumeEntryStart
     \resumeEntryTD
-      {Dwight Schrute's Gym for Muscles}{}
+      {Countermeasure Launch Control Panel (LCP) Technology Refresh}{}
     \resumeItemListStart
-      \resumeItem {A built-in gym inside the Dunder Mifflin office complex that will buy your tin for 5 cents a yard.}
+      \resumeItem {THING 1}
     \resumeItemListEnd
   \resumeEntryEnd
 
-  \resumeEntryStart
-    \resumeEntryTD
-      {Sesame Avenue Daycare Center for Infants and Toddlers}{}
-    \resumeItemListStart
-      \resumeItem {A great daycare for infants with a focus on cognitive development.}
-    \resumeItemListEnd
-  \resumeEntryEnd
-
-%-------------------------------------------------- PROGRAMMING SKILLS --------------------------------------------------
-\section{\faCogs}{Skills}
+% SKILLS
+\section{\faToolbox}{Skills}
  \resumeEntryStart
   \resumeEntryS{Traits } {Hardworking, Alpha Male, Jackhammer, Merciless, Insatiable}
   \resumeEntryS{Talents } {Karate (Black Belt), Jujitsu, Werewolf Hunting, Table Making}
+  \resumeEntryS{}{Previously held a Top Secret clearance with access to Sensitive Compartmented Information based on an Office of Personnel Management (OPM) Single Scope Background Investigation/Periodic Review (SSBI/SSBI-PR) completed on 11/22/3333.}
  \resumeEntryEnd
 
 \end{document}
