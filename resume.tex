@@ -124,6 +124,13 @@
   }
 }
 
+% Entry for bottom note(s)
+\newcommand{\resumeEntryNote}[1]{
+  \item[]\small{
+    { #1 \vspace{-6pt}}
+  }
+}
+
 % Double column header
 \newcommand{\doublecol}[6]{
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -241,7 +248,7 @@
  \resumeEntryStart
   \resumeEntryS{Embedded Hardware} {Analog and digital circuit design, schematic creation, }
   \resumeEntryS{Programming Languages} {Assembly, C, C++, Arduino, CMake, \LaTeX}
-  \resumeEntryS{}{Previously held a Top Secret clearance with access to Sensitive Compartmented Information based on an Office of Personnel Management Single Scope Background Investigation/Periodic Review completed on 11/22/3333.}
+  \resumeEntryNote{Previously held a Top Secret clearance with access to Sensitive Compartmented Information based on an Office of Personnel Management Single Scope Background Investigation/Periodic Review completed on 11/22/3333. \vspace{-6pt}}
  \resumeEntryEnd
 
 \end{document}
