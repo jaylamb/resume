@@ -100,12 +100,22 @@
   }
 }
 
-% Entry with title, subheading, date(s), and location
+% Entry with title, subheading, date, and location
 \newcommand{\resumeEntryTSDL}[4]{
   \vspace{-1pt}\item[]
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
       \textit{\color{accent}\small#3} & \textit{\color{accent}\small#4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+% Entry with title, subheading, date, location, and profession
+\newcommand{\resumeEntryTSDLP}[5]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
+      \textit{\color{accent}\small#3} & \textit{\color{accent}\small#4} \\
+      \textit{\color{accent}\small#5}
     \end{tabular*}\vspace{-6pt}
 }
 
