@@ -64,7 +64,7 @@
 \def \github {\githubicon \hspace{3pt}\href{\githublink}{\githubtext}}
 %\def \website {\websiteicon \hspace{3pt}\href{\websitelink}{\websitetext}}
 
-% Define the link colours
+% Define the link colors
 \hypersetup{
     colorlinks=true,
     urlcolor=links,
@@ -137,7 +137,7 @@
 % Entry for bottom note(s)
 \newcommand{\resumeEntryNote}[1]{
   \item[]\small{
-    { #1 \vspace{-6pt}}
+    { #1 \vspace{-10pt}}
   }
 }
 
@@ -202,7 +202,7 @@
   \resumeEntryStart
     \resumeEntryTSDLP
       {Naval Undersea Warfare Center - Division Keyport}{August 2016 -- Present}
-      {Submarine Undersea Defensive Systems In-Service Engineering Agent (ISEA)}{Keyport, WA}
+      {Submarine Undersea Defensive Systems In-Service Engineering Agent}{Keyport, WA}
 	  {Countermeasure Set, Acoustic MK 2 Lead Engineer}
     \resumeItemListStart
 
@@ -241,7 +241,7 @@
     \resumeEntryTSDLP
       {Naval Undersea Warfare Center - Division Keyport}{January 2012 -- August 2016}
       {Rapid Prototyping and Fabrication Design}{Keyport, WA}
-	  {Embedded Systems Engineer - Automated Tracking Analyzer Balancer System (ATABS)}
+	  {Embedded Systems Engineer - Automated Tracking Analyzer Balancer System}
     \resumeItemListStart
 
       \resumeItem{
@@ -272,7 +272,7 @@
   \resumeEntryStart
     \resumeEntryTSDL
       {Naval Acquisition Intern Program }{July 2009 -- January 2012}
-      {Systems Planning, Research, Development, and Engineering (SPRDE) - Level 2}{Keyport, WA}
+      {Systems Planning, Research, Development, and Engineering - Level 2}{Keyport, WA}
     \resumeItemListStart
 
       \resumeItem{
@@ -293,13 +293,26 @@
  \resumeEntryStart
   \resumeEntryS
 	{Embedded Hardware}
-	{Analog and digital circuit design, schematic creation, PCB layout, PCB parts library creation, logical analysis, test hardware design}
+	{
+	 Analog and digital circuit design, schematic creation, PCB layout,
+	 device creation in EAGLE, test hardware design, interface design (I\textsuperscript{2}C, SPI, RS-232)
+	}
+
   \resumeEntryS
 	{Programming Languages and Tools}
-	{Assembly, C, C++, Arduino, VHDL, CMake, \LaTeX, Git, GCC, Vim, GMock, GTest, Google Protocol Buffers}
+	{
+	 C, C++, VHDL, CMake, \LaTeX, Git, GCC, Vim, GMock, GTest,
+	 Google Protocol Buffers
+	}
 
-  \resumeEntryNote
-	{Currently holds a Secret clearance. Previously held a Top Secret clearance with access to Sensitive Compartmented Information based on an Office of Personnel Management Single Scope Background Investigation/Periodic Review completed on 11/22/3333.}
+  \vspace{5pt}
+  \resumeEntryNote{
+	Currently holds a Secret clearance. Previously held a Top Secret
+	clearance with access to Sensitive Compartmented Information based
+	on an Office of Personnel Management Single Scope Background
+	Investigation/Periodic Review completed on 11/22/3333.
+  }
+
  \resumeEntryEnd
 
 \end{document}
