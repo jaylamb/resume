@@ -26,6 +26,12 @@
 % Number of columns in header for name, phone, etc...
 \def \headertype {\doublecol} % \singlecol or \doublecol
 
+% Colors
+\definecolor{primary}{HTML}{000000}   % White
+\definecolor{secondary}{HTML}{0D47A1} % Blue
+\definecolor{accent}{HTML}{263238}    % Dark Grey
+\definecolor{links}{HTML}{1565C0}     % Light Blue
+
 % Name
 \def \fullname {Jay D. Lamb}
 \def \subtitle {Computer Engineer}
@@ -53,15 +59,9 @@
 \def \entryspacing {-0pt}
 \def \bulletstyle {\faChevronCircleRight[solid]}
 
-% Colors
-\definecolor{primary}{HTML}{000000}   % White
-\definecolor{secondary}{HTML}{0D47A1} % Blue
-\definecolor{accent}{HTML}{263238}    % Dark Grey
-\definecolor{links}{HTML}{1565C0}     % Light Blue
-
 % Defines to make listing easier
 \def \linkedin {\linkedinicon \hspace{3pt}\href{\linkedinlink}{\linkedintext}}
-\def \phone    {\phoneicon    \hspace{3pt}                    { \phonetext  }}
+\def \phone    {\phoneicon    \hspace{3pt}                    {\phonetext   }}
 \def \email    {\emailicon    \hspace{3pt}\href{\emaillink}   {\emailtext   }}
 \def \github   {\githubicon   \hspace{3pt}\href{\githublink}  {\githubtext  }}
 
@@ -287,6 +287,7 @@
 
 % SKILLS
 \section{\faToolbox}{Skills}
+
  \resumeEntryStart
   \resumeEntryS
 	{Embedded Hardware}
