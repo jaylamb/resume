@@ -1,58 +1,83 @@
-This was adapted from the template [here](https://github.com/sb2nov/resume), with some modifications to design, the code, and ability to get up and running. [Preview](#preview) here.
+Copyright 2020 Jay D. Lamb 
 
-# Usage
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
 
-There are 5 distinct components: header, sections, entry type 1 (title, subheading, date(s), location), entry type 2 (title, date(s)), and entry type 3 (single list no bullet, with a bold prefix). 
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-You can also modify the colour scheme (primary, secondary, accent, and link colours).
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# Header
+Author  : Jay D. Lamb
 
-Change the variables at the top of the document, and then modify the order you want to present your info in the `\headertype{}{}{}{}{}{}` argument at the beginning of the document. You can choose `\doublecol` or `\singlecol`. They look like this:
+License : MIT
 
-![](/assets/singlecolheader.svg)
-![](/assets/doublecolheader.svg)
+File        : README.md
 
-Single column probably handles longer links better. Full previews at the [preview](#preview) section.
+Description : Project README.
 
-# Section
+# Resume
+My resume.
 
-`\section{<icon>}{Text}`
+## Usage
+The main document file, `resume.tex` contains all of the high-level document
+information (packages used, margin information) and includes for other sections
+of the document. All other included files are located within the `section`
+directory.
 
-<icon> can be anything; fontawesome icons are great.
+The following packages are required to generate the document:
 
+* texlive
+* texlive-latex-extra
+* texlive-fonts-extra
 
-# Entry
+Build the .pdf using the following command:
 
-Preceed it by `\resumeEntryStart` and end it with `\resumeEntryEnd`.
+`pdflatex resume.tex`
 
-## Entry type 1
+## Helper Sections
 
-`\resumeEntryTSDL{Title}{Date(s)}{Subheading}{Location}`
+### Defines
 
-## Entry type 2
+The `defines.tex` file contains definitions used throughout the document. These
+include:
 
-`\resumeEntryTD{Title}{Date(s)}`
+* Header type (single or double column) 
+* Entry spacing
+* Bullet styling
+* Colors used
+* Header information (name, phone number, email address, LinkedIn information,
+ GitHub information)
 
-## Entry type 3
+### Commands
 
-`\resumeEntryS{Bold}{RegularText}`
+The `commands.tex` file contains each of the custom commands used to produce and
+format sections of the document.
 
-# Entry Details
+## Document Sections
+The document contains three document sections:
 
-Preceed it by `\resumeItemListStart` and end it with `\resumeItemListEnd`. Each item is a `\resumeItem`.
+* Education
+* Experience
+* Skills
 
-# Preview
+Each of these sections exist within their own `.tex` file, located within the
+`section` directory.
 
-## Double Column
+## Credits
 
-![](/assets/doublecolfull.svg)
-
-## Single Column
-
-![](/assets/singlecolfull.svg)
-
-# Credits
+Inspiration for this document is
+[here](https://www.overleaf.com/latex/templates/software-engineering-resume/mcvwcrmddsyw)
 
 Original template from [here](https://github.com/sb2nov/resume).
+
 Template text from [here](https://resumake.io/).
