@@ -1,66 +1,76 @@
-This .tex file originated at:
+% Copyright 2020 Jay D. Lamb 
 
-https://www.overleaf.com/latex/templates/software-engineering-resume/mcvwcrmddsyw
+% Permission is hereby granted, free of charge, to any person obtaining a copy of
+% this software and associated documentation files (the "Software"), to deal in
+% the Software without restriction, including without limitation the rights to
+% use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+% the Software, and to permit persons to whom the Software is furnished to do so,
+% subject to the following conditions:
 
-Modifications were made to the original file to get it to compile with my Linux VM. (Ubuntu 19.04).
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
 
---- Original README follows ---
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+% FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+% COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+% IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+% CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This was adapted from the template [here](https://github.com/sb2nov/resume), with some modifications to design, the code, and ability to get up and running. [Preview](#preview) here.
+% Author  : Jay D. Lamb
+% License : MIT
+
+% File        : README.md
+% Description : Project README.
 
 # Usage
+The main document file, `resume.tex` contains all of the high-level document
+information (packages used, margin information) and includes for other sections
+of the document. All other included files are located within the `section`
+directory.
 
-There are 5 distinct components: header, sections, entry type 1 (title, subheading, date(s), location), entry type 2 (title, date(s)), and entry type 3 (single list no bullet, with a bold prefix). 
+The following packages are required to generate the document:
 
-You can also modify the colour scheme (primary, secondary, accent, and link colours).
+* texlive
+* texlive-latex-extra
+* texlive-fonts-extra
 
-# Header
+Build the .pdf using the following command:
 
-Change the variables at the top of the document, and then modify the order you want to present your info in the `\headertype{}{}{}{}{}{}` argument at the beginning of the document. You can choose `\doublecol` or `\singlecol`. They look like this:
+`pdflatex resume.tex`
 
-![](/assets/singlecolheader.svg)
-![](/assets/doublecolheader.svg)
+# Helper Sections
 
-Single column probably handles longer links better. Full previews at the [preview](#preview) section.
+## Defines
 
-# Section
+The `defines.tex` file contains definitions used throughout the document. These
+include:
 
-`\section{<icon>}{Text}`
+* Header type (single or double column) 
+* Entry spacing
+* Bullet styling
+* Colors used
+* Header information (name, phone number, email address, LinkedIn information,
+ GitHub information)
 
-<icon> can be anything; fontawesome icons are great.
+## Commands
 
+The `commands.tex` file contains each of the custom commands used to produce and
+format sections of the document.
 
-# Entry
+# Document Sections
+The document contains three document sections:
 
-Preceed it by `\resumeEntryStart` and end it with `\resumeEntryEnd`.
+* Education
+* Experience
+* Skills
 
-## Entry type 1
-
-`\resumeEntryTSDL{Title}{Date(s)}{Subheading}{Location}`
-
-## Entry type 2
-
-`\resumeEntryTD{Title}{Date(s)}`
-
-## Entry type 3
-
-`\resumeEntryS{Bold}{RegularText}`
-
-# Entry Details
-
-Preceed it by `\resumeItemListStart` and end it with `\resumeItemListEnd`. Each item is a `\resumeItem`.
-
-# Preview
-
-## Double Column
-
-![](/assets/doublecolfull.svg)
-
-## Single Column
-
-![](/assets/singlecolfull.svg)
+Each of these sections exist within their own `.tex` file, located within the
+`section` directory.
 
 # Credits
 
+Inspiration for this document is
+[here](https://www.overleaf.com/latex/templates/software-engineering-resume/mcvwcrmddsyw)
 Original template from [here](https://github.com/sb2nov/resume).
 Template text from [here](https://resumake.io/).
