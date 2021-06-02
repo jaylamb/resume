@@ -5,13 +5,12 @@
 % Description : Resume defines. 
 
 % Number of columns in header for name, phone, etc...
-\def \headertype {\doublecol} % \singlecol or \doublecol
+\def \headertype {\doublecolqr} % \singlecol, \doublecol, or \doublecolqr
 
 % Colors
 \definecolor{primary}{HTML}{000000}   % White
 \definecolor{secondary}{HTML}{0D47A1} % Blue
 \definecolor{accent}{HTML}{263238}    % Dark Grey
-\definecolor{links}{HTML}{1565C0}     % Light Blue
 
 % Name
 \def \fullname {Jay D. Lamb}
@@ -45,9 +44,10 @@
 \def \phone    {\phoneicon    \hspace{3pt}                    {\phonetext   }}
 \def \email    {\emailicon    \hspace{3pt}\href{\emaillink}   {\emailtext   }}
 \def \github   {\githubicon   \hspace{3pt}\href{\githublink}  {\githubtext  }}
+\def \githubqr {\textcolor{black}{\qrcode[height=1.5cm]{https://www.github.com/jaylamb}}}
 
 % Define the link colors
 \hypersetup{
     colorlinks=true,
-    urlcolor=links,
+    urlcolor=secondary,
 }

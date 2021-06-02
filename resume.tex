@@ -9,6 +9,7 @@
 \usepackage[empty]{fullpage}
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
+\usepackage{qrcode}
 \usepackage{fontawesome5}
 \usepackage[sfdefault,light]{FiraSans}
 \usepackage{anyfontsize}
@@ -31,11 +32,11 @@
 
 \begin{document}
 
-% Order the header entries
-\headertype{\phone}{\linkedin}{\email}{\github}{}{}
+% Draw the header entries
+\headertype{\phone}{\linkedin}{\email}{\github}
 
-\input{section/education}
 \input{section/experience}
+\input{section/education}
 \input{section/skills}
 
 \end{document}

@@ -64,7 +64,7 @@
     {
       \begin{tabular}[c]{l}
         \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
-        {\textit{\subtitle}} % You could add a subtitle here
+        {\textit{\subtitle}}
       \end{tabular}
     } & {
       \begin{tabular}[c]{l@{\hspace{1.5em}}l}
@@ -82,7 +82,7 @@
     {
       \begin{tabular}[b]{l}
         \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
-        {\textit{\subtitle}} % You could add a subtitle here
+        {\textit{\subtitle}}
       \end{tabular}
     } & {
       \begin{tabular}[c]{l}
@@ -96,3 +96,23 @@
     }
   \end{tabular*}
 }
+
+% Double column header with QR code
+\newcommand{\doublecolqr}[4]{
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{0.2cm}}l@{\extracolsep{\fill}}r}
+    {
+      \githubqr
+    } & {
+      \begin{tabular}[c]{l}
+        \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
+        {\textit{\subtitle}}
+      \end{tabular}
+    } & {
+      \begin{tabular}[c]{l@{\hspace{1.5em}}l}
+        {\small#1} & {\small#2} \\
+        {\small#3} & {\small#4}
+      \end{tabular}
+    }
+  \end{tabular*}
+}
+
